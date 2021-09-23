@@ -2,8 +2,8 @@
 public class Programa {
 	public static void main(String[] args) {
 		
-		Vendedor v = new Vendedor();
-		v.setDataDeEntrada("10/01/2010");
+		Vendedor v = new Vendedor();        // criando objeto para acessar outra classe
+		v.setDataDeEntrada("10/01/2010");    // definido valor
 		v.setDepartamento("Vendas");
 		v.setEstaNaEmpresa(true);
 		v.setNome("Eduardo");
@@ -11,9 +11,9 @@ public class Programa {
 		//v.calculaSalario();		
 		 
 		
-		Gerente g1 = new Gerente();
-		g1.departamento = "Vendas";
-		g1.dataDeEntrada = "03/02/1990";
+		Gerente g1 = new Gerente();         // criando objeto para acessar outra classe
+		g1.departamento = "Vendas";          // definido valor
+		g1.dataDeEntrada = "03/02/1990";        
 		g1.estaNaEmpresa = true;
 		g1.nome = "Eric";		
 		g1.rg = "48";
@@ -24,34 +24,34 @@ public class Programa {
 		g1.setLogin("eric");
 		g1.setSenha("123");
 		
-		Supervisor supervisor = new Supervisor();
-		supervisor.salario = 5000.0;
+		Supervisor supervisor = new Supervisor();   // criando objeto para acessar outra classe
+		supervisor.salario = 5000.0;                // definido valor
 		
-		ControleDeBonificacao controle = new ControleDeBonificacao();
-		controle.calculaTotalDeBonus(v);
-		controle.calculaTotalDeBonus(g1);
-		controle.calculaTotalDeBonus(supervisor);
+		ControleDeBonificacao controle = new ControleDeBonificacao();   // criando objeto para acessar outra classe
+		controle.calculaTotalDeBonus(v);         // definindo valor
+		controle.calculaTotalDeBonus(g1);         // definindo valor
+		controle.calculaTotalDeBonus(supervisor); //definindo valor
 			
-		System.out.println(v.getDataDeEntrada());
-		System.out.println(v.getDepartamento());
-		System.out.println(v.getNome());
-		System.out.println(v.getRg());
-		System.out.println(v.getSalario());
-		System.out.println(v.isEstaNaEmpresa());
-		System.out.println(v.bonifica());
+		System.out.println(v.getDataDeEntrada());   // Imprime na tela a data de entrada
+		System.out.println(v.getDepartamento()); // Imprime na tela o departamento
+		System.out.println(v.getNome());          // Imprime na tela o nome
+		System.out.println(v.getRg());            // Imprime na tela o rg
+		System.out.println(v.getSalario());      // Imprime na tela o salario
+		System.out.println(v.isEstaNaEmpresa());    // Imprime na tela esta na empresa
+		System.out.println(v.bonifica());         // Imprime na tela bonifica
 		
 		
-		System.out.println("//////////////////////////////");
+		System.out.println("//////////////////////////////");    // imprimi na tela para separar informações
 		g1.autentica("eric", "124");
-		System.out.println(g1.getDataDeEntrada());
-		System.out.println(g1.getDepartamento());
-		System.out.println(g1.getNome());
-		System.out.println(g1.getRg());
-		System.out.println(g1.getSalario());		
-		System.out.println(g1.bonifica());
+		System.out.println(g1.getDataDeEntrada());      // Imprime na tela a data de entrada
+		System.out.println(g1.getDepartamento());       // Imprime na tela o departamento
+		System.out.println(g1.getNome());                // Imprime na tela o nome
+		System.out.println(g1.getRg());                  // Imprime na tela o rg
+		System.out.println(g1.getSalario());	    	// Imprime na tela o salario
+		System.out.println(g1.bonifica());            // Imprime na tela bonifica
 		
 		
-		System.out.println("Total de bonus: R$" + controle.getTotalDeBonus());
+		System.out.println("Total de bonus: R$" + controle.getTotalDeBonus());   // imprime na tela a mensagem
 		
 		
 	}

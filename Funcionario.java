@@ -47,17 +47,17 @@ public abstract class Funcionario {   // definindo classe abstrata
 		this.salario = valor - (valor * 0.06);         // atributos do calculo do salario 
 	}
 
-	public void calculaSalario(double valor, double horaExtra) {
-		double valorHorasExtra = (valor/30) / 8 * horaExtra;
-		this.salario = valor - (valor*0.06) + valorHorasExtra;
+	public void calculaSalario(double valor, double horaExtra) {   //  atribuir um valor inalterável para hora extra
+		double valorHorasExtra = (valor/30) / 8 * horaExtra;       // calculando
+		this.salario = valor - (valor*0.06) + valorHorasExtra;   // atributos do calculo feito
 	}
 
-	public double  calculaSalario() {
-		return this.salario = this.salario - (this.salario * 0.06);
+	public double  calculaSalario() {                                  // atribuir um valor  
+		return this.salario = this.salario - (this.salario * 0.06);    // retorno do calculo feito
 	}
 
-	public double bonifica(){
-		return this.salario * 0.10;
+	public double bonifica(){                            // atribuir um valor 
+		return this.salario * 0.10;                      // retorno do calculo 
 	}
 	
 	public void demite() {

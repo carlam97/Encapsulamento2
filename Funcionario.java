@@ -60,12 +60,12 @@ public abstract class Funcionario {   // definindo classe abstrata
 		return this.salario * 0.10;                      // retorno do calculo 
 	}
 	
-	public void demite() {
+	public void demite() {                 
 		estaNaEmpresa = false;
 	}
 
-	public double calculaGanhoAnual() {
-		return salario * 12;
+	public double calculaGanhoAnual() {    
+		return salario * 12;        // retorna o calculo do salrio
 	}
 	
 	

@@ -1,5 +1,5 @@
-public class Controle {
-	private double totalDebonus;
+public class Controle {              // declarando classe publica de controle
+	private double totalDebonus;     // total de bonus variavel privada
 	
 	public double getTotalDeBonus() {
 		return this.totalDebonus;

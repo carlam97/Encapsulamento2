@@ -1,4 +1,4 @@
-public class Supervisor extends Gerente {
+public class Supervisor extends Gerente {   // declarando classe do gerente
 	
 }
 
